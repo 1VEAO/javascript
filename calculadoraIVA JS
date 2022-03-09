@@ -1,0 +1,81 @@
+console.log("televisor");
+console.log("celular");
+console.log("ordenador");
+// comienzo
+let iva = 0.18;
+
+
+
+function valorPrducto(nombre,cantidad) {
+ let nombreDeProducto = nombre;
+ if (nombreDeProducto == "televisor"){
+  let valorSinIva = 2000;
+  let valorIva = valorSinIva*iva;
+  let valorConIva = valorSinIva + valorIva;
+  let informacion = `el valor del ${nombre} es ${valorConIva}`;
+  console.log(informacion)
+  console.log(`el iva es de ${valorIva}`)
+  console.log(`valor sin iva es ${valorSinIva}`)
+
+  if (cantidad == 2) {
+   let descuento = valorConIva*0.1;
+   console.log(`por llevar ${cantidad} ${nombre} te haremos un descuento de ${descuento}`)
+   let precioPorDos = valorConIva*2;
+   let precioDescuento = precioPorDos - descuento;
+   console.log(precioDescuento)
+  } else if (cantidad == 3) {
+   let descuento = valorConIva*0.2;
+   console.log(`por llevar ${cantidad} ${nombre} te haremos un descuento de ${descuento}`)
+   let precioPorTres = valorConIva * 3;
+   let precioDescuento = precioPorTres - descuento;
+   console.log(precioDescuento)
+  }
+ } else if (nombreDeProducto == "celular"){
+  let valorSinIva = 1500;
+  let valorIva = valorSinIva*iva;
+  let valorConIva = valorSinIva + valorIva;
+  let informacion = `el valor del ${nombre} es ${valorConIva}`;
+  console.log(informacion)
+  console.log(`el iva es de ${valorIva}`)
+  console.log(`valor sin iva es ${valorSinIva}`)
+
+  if (cantidad == 2) {
+   let descuento = valorConIva*0.1;
+   console.log(`por llevar ${cantidad} ${nombre} te haremos un descuento de ${descuento}`)
+   let precioPorDos = valorConIva*2;
+   let precioDescuento = precioPorDos - descuento;
+   console.log(precioDescuento)
+  } else if (cantidad == 3) {
+   let descuento = valorConIva*0.2;
+   console.log(`por llevar ${cantidad} ${nombre} te haremos un descuento de ${descuento}`)
+   let precioPorTres = valorConIva * 3;
+   let precioDescuento = precioPorTres - descuento;
+   console.log(precioDescuento)
+  }
+
+ } else if (nombreDeProducto == "ordenador"){
+  let valorSinIva = 3500;
+  let valorIva = valorSinIva*iva;
+  let valorConIva = valorSinIva + valorIva;
+  let informacion = `el valor del ${nombre} es ${valorConIva}`
+  console.log(informacion)
+  console.log(`el iva es de ${valorIva}`)
+  console.log(`valor sin iva es ${valorSinIva}`)
+
+  if (cantidad == 2) {
+   let descuento = valorConIva*0.1;
+   console.log(`por llevar ${cantidad} ${nombre} te haremos un descuento de ${descuento}`)
+   let precioPorDos = valorConIva*2;
+   let precioDescuento = precioPorDos - descuento;
+   console.log(precioDescuento)
+  } else if (cantidad == 3) {
+   let descuento = valorConIva*0.2;
+   console.log(`por llevar ${cantidad} ${nombre} te haremos un descuento de ${descuento}`)
+   let precioPorTres = valorConIva * 3;
+   let precioDescuento = precioPorTres - descuento;
+   console.log(precioDescuento)
+  }
+ } else {
+  console.log(`no tenemos ${nombre}`)
+ };
+};
